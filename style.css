@@ -1,0 +1,153 @@
+:root{
+    --yan: hsl(179, 62%, 43%);
+    --right-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+}
+
+.container{
+    width: min(100% -15px, 1440px);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+}
+
+.box{
+    max-width: 640px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box-top{
+    background-color: #fff;
+    padding: 45px 40px;
+}
+
+.box-top h1{
+    font-size: 24px;
+    color: var(--yan);
+    margin-bottom: 30px;
+}
+
+.box-top h4{
+    color: var(--right-Yellow);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.box-top p{
+    color: var(--Grayish-Blue);
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.box-bottom{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-bottom-left{
+    background-color:var(--yan);
+    width: 50%;
+    padding: 45px 40px;
+}
+
+.box-bottom-right{
+    background-color:hsl(179, 61%, 46%);
+    width: 50%;
+    padding: 45px 40px;
+}
+
+.box-bottom-left h3{
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.box-bottom-left .price{
+    color: var(--Light-Gray);
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+}
+
+.box-bottom-left .price span{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 26px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.box-bottom-left .under-price{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.btn{
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    background-color: var(--right-Yellow);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 19px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.box-bottom-right h3{
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.box-bottom-right ul{
+    list-style: none;
+    color: var(--Light-Gray);
+    line-height: 23px;
+}
+
+@media only screen and (max-width: 650px) {
+
+    .container{
+        height: 1200px;
+    }
+
+    .box{
+        max-width: 640px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0 30px;
+    }
+
+    .box-bottom{
+        flex-direction: column;
+    }
+
+    .box-bottom-left{
+        width: 100%;
+    }
+
+    .box-bottom-right{
+        width: 100%;
+    }
+
+}
